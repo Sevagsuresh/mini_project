@@ -1,0 +1,149 @@
+/* DashboardStaff.css */
+/* DashboardStaff.css */
+.profile-icon {
+    position: absolute;
+    right: 90px;
+    top: 50px;
+    cursor: pointer;
+    color: rgb(248, 242, 242);
+  }
+  
+  .profile-icon:hover {
+    color: #0f1dda;
+  }
+  
+body {
+    background-color: #000000; /* Full black background */
+    color: #ffffff; /* White text color for contrast */
+    font-family: 'Poppins', sans-serif;
+    perspective: 1000px; /* Adding 3D perspective */
+}
+
+.dashboard {
+    background-color: #1a1a1a; /* Dark background for the dashboard area */
+    padding: 20px;
+}
+
+header {
+    background-color: #ee1010; /* Darker header */
+    border-bottom: 2px solid #333333; /* Subtle border for header */
+}
+
+h1, h2, h3, h4, h5 {
+    color: #f2f2f2; /* Light text for headers */
+}
+
+.card {
+    background-color: #2b2b2b; /* Slightly lighter card background */
+    border: none; /* Remove default card border */
+    border-radius: 8px; /* Smooth edges */
+    box-shadow: 0 4px 8px rgba(247, 243, 243, 0.7); /* Game-like shadow */
+    color: #fff; /* Text color inside cards */
+    transition: transform 0.3s ease-in-out; /* Animation for 3D effect */
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(10deg); /* 3D rotation effect on hover */
+}
+
+.card-header {
+    background-color: #333333; /* Darker card header */
+    border-bottom: 1px solid #444444; /* Subtle border for card header */
+    padding: 15px;
+}
+
+.card-title {
+    color: #faf9f9; /* Softer white for titles */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-group-item {
+    background-color: #1f1f1f; /* Dark list items */
+    border: 1px solid #444444; /* Border for list items */
+    color: #fdf6f6;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #333333; /* Hover effect on list items */
+    transform: translateX(10px); /* Slide-in effect on hover */
+}
+
+.btn {
+    background-color: #444444; /* Dark button */
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #666666; /* Lighter hover effect for button */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.btn-success {
+    background-color: #28a745; /* Keep the green success button */
+}
+
+.btn-warning {
+    background-color: #ffcc00; /* Golden button for warnings */
+}
+
+.btn-info {
+    background-color: #80b817; /* Light blue info button */
+}
+
+.profile-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff; /* White border around profile icon */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+input.form-control {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+input.form-control:focus {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    box-shadow: none;
+}
+
+.alert-info {
+    background-color: #333333;
+    color: #cccccc;
+}
+
+.alert {
+    border-radius: 5px;
+}
+
+h4 {
+    color: #f39c12; /* Bright orange for notifications */
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem; /* Adjust title size on smaller screens */
+    }
+}

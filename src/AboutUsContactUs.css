@@ -1,0 +1,16 @@
+.about-us-contact-us {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.about-us, .contact-us {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}

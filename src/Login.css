@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Ensure the body takes up the full height and remove default margins */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.login-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('../src/assets/food-background-breakfast-with-yogurt-granola-or-muesli-strawberries-banner-image-for-website-photo.jpg'); /* Background image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Add perspective for 3D effects */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.login-card {
+    position: relative;
+    background-color: rgb(202, 201, 196);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out; /* Animation for 3D effect */
+}
+
+/* .login-card:hover {
+    transform: rotateY(10deg) rotateX(10deg); /* 3D rotation effect on hover * 
+} */
+
+.login-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-link {
+    text-align: center;
+}
+
+/* New grid layout for login and register buttons */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold; /* Make buttons bold */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #f32727;
+    color: #0a0a0a;
+}
+
+.login-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05) translateZ(10px); /* Add 3D zoom effect */
+}
+
+.register-btn {
+    background-color: #78b433;
+    color: #fff;
+}
+
+.register-btn:hover {
+    background-color: #7cb342;
+    transform: scale(1.05) translateZ(10px); /* Add 3D zoom effect */
+}

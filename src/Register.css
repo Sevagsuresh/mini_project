@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Ensure the body takes up the full height and remove default margins */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../src/assets/pexels-rachel-claire-5865078.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    color: #333; /* Change the font color */
+    perspective: 1000px; /* Add perspective for 3D effects */
+}
+
+.register-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: rgba(31, 25, 26, 0.24); /* Slightly transparent background */
+    box-shadow: 0 4px 8px rgba(29, 28, 28, 0.555);
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    color: #f7f0f0; /* Change the font color */
+    transition: transform 0.3s ease-in-out; /* Animation for 3D effect */
+}
+
+/* .register-card:hover {
+    transform: rotateY(10deg) rotateX(10deg); /* 3D rotation effect on hover  * /
+} */
+
+.register-card .form-select {
+    border-radius: 0.375rem;
+}
+
+.register-card .btn-primary {
+    background-color: #f0efe0;
+    border-color: #007bff;
+    color: #333; /* Change the font color of button text */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold; /* Make buttons bold */
+}
+
+.register-card .btn-primary:hover {
+    background-color: #1781f1;
+    border-color: #004085;
+    color: #fff; /* Change the font color of button text on hover */
+    transform: scale(1.05) translateZ(10px); /* Add 3D zoom effect */
+}
+
+.register-card .btn-link {
+    color: #03080e;
+    text-decoration: none;
+}
+
+.register-card .btn-link:hover {
+    text-decoration: underline;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateZ(-100px);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
